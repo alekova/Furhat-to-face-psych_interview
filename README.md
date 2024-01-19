@@ -1,10 +1,7 @@
-# Quiz
-Compete with a friend in a quiz game
 
 ## Description
-Partake in a quiz game with the robot where it will ask you and your friends multiple choice questions and receive a 
-score for every correct answer. 
+Depression, Anxiety and Stress Scale - 21 Items (DASS-21)
 
 ## Usage
-Max number of users is set to: 2
+Max number of users is set to: 1
 No other specific requirements. 
