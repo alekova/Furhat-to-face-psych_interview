@@ -3,6 +3,7 @@ If you are facing significant emotional difficulties, you can use this open temp
 
 
 ## Usage
+The project is based on the Furhat skill template 'Quiz'. New Kotlin files are inserted, some are deleted. A Resources folder is included, as well as the Furhat default HostedGUI template for external touch monitor or tablet.
 Max number of users is set to: 1
 
 If you want to use external GUI, open on a tablet or other PC with Internet connection the furhat web page and press the GUI tab next to the skill. Start GUI at the begining.
