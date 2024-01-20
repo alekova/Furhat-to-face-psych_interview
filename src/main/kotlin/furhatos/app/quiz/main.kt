@@ -6,8 +6,9 @@ import furhatos.flow.kotlin.Flow
 import furhatos.skills.Skill
 import furhatos.skills.HostedGUI
 
-//val gui = HostedGUI("PsychScreeningTest", "assets/gui", port=12345)
-val gui2 = HostedGUI("PsychScreeningTest", "assets", port=12345)
+val gui = HostedGUI("PsychTestGui")
+
+
 
 class Quiz : Skill() {
     override fun start() {

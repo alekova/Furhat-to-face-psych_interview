@@ -42,7 +42,5 @@ val Parent: State = state {
         }
     }
 
-    onEvent(SenseGameReset) {
-        goto(Idle)
-    }
+
 }

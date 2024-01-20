@@ -12,6 +12,8 @@ class one: Intent()
 class two: Intent()
 class three: Intent()
 
+class four: Intent()
+
 class DontKnow : Intent() {
     override fun getExamples(lang: Language): List<String> {
         return listOf(

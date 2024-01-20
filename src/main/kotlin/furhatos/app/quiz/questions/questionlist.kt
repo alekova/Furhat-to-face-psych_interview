@@ -3,8 +3,9 @@ package furhatos.app.quiz.questions
 /**
  * The questions are structured like
  *  -The question
- *  -The correct answer, followed by alternative pronounciations
- *  -A list of other answers followed by their alternatives
+ *  -The correct answer is taken from the resources folder as intent, not from here
+ *  see nlu.kt raw 10. for more details: Defining EnumEntities in separate files, https://docs.furhat.io/unstable/nlu/
+ *  -A list of  alternatives
  */
 val questionsEnglish = mutableListOf(
         Question("I found it hard to wind down",

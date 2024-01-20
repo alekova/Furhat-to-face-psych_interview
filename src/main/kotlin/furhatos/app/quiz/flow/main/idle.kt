@@ -8,9 +8,7 @@ import furhatos.flow.kotlin.*
 import furhatos.nlu.common.No
 import furhatos.nlu.common.Yes
 import furhatos.records.User
-import furhatos.app.quiz.flow.SenseGameReset
-import furhatos.app.quiz.flow.SenseSelectDeck
-import furhatos.app.quiz.flow.SenseCheckbox
+
 
 val Idle: State = state {
     onEntry {
@@ -28,7 +26,7 @@ val Idle: State = state {
         // Once no more user, start the game with all interested users
         if (users.playing().isNotEmpty()) {
             furhat.attendAll()
-            goto(NewGame)
+            goto(NewTest)
         }
     }
 
@@ -79,30 +77,6 @@ fun QueryPerson(user: User) = state(parent = Parent) {
             furhat.ask("Do you want to test again? Maybe you can have different score ")
         }
     }
-    onEvent(SenseGameReset) {
-        furhat.say("Event 1 received")
-
-        println(it.get("param1")) // "paramValue" or "null" if param1 is not set
-    }
-
-    onEvent(SenseSelectDeck) {
-        furhat.say("Event received")
-
-        println(it.get("param1")) // "paramValue" or "null" if param1 is not set
-    }
-
-    onEvent(SenseCheckbox) {
-        furhat.say("Event SenseCheckbox")
-        val params=it.get("params")?.toString()
-        //val params = it.get("params") as? Map<String, Any> // Assuming params is a Map<String, Any>
-
-        // Check if params is not null and contains the "param1" key
-        //val param1Value = params?.get("param1")?.toString()
-       // println(param1Value)
-
-        //println("Value of param1: $qi, Value of param2: $value")
-    }
-
 
 
     onResponse<Yes> {

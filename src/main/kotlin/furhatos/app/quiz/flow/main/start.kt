@@ -20,6 +20,7 @@ import furhatos.app.quiz.zero
 import furhatos.app.quiz.one
 import furhatos.app.quiz.two
 import furhatos.app.quiz.three
+import furhatos.app.quiz.four
 
 
 
