@@ -31,6 +31,9 @@ User responses are processed in 'askQuestion.kt', for instance, raw 60 processes
 6. Assessing Severity:
 In 'endTest'.kt, raw 15, you need to change the function assessSeverity with your own assessment. Also, review rows 40-42 for the assessment of severity for each category.
 
+
+![customizing of the open-template to fit different question structures and evaluation criteria in source code. (a) Original code in GitHub for DASS-21. (b) Customized code for PSS.](cust.png)
+
 ## Customisation for DASS-42
 This includes the number of statements, answer options, scale and assessment. Customizing the Number of Statements: Open the project and go to 'idle.kt', line 68. Change the variable val maxStatements = 21 to the number of statements in your customized test. In the start.kt define how many states you have and correspondingly how many state_scores you need. There are three scores in the template (scoreS, scoreA and scoreD). Exclude any scores you don't require, specifically, the scores that are unnecessary for your use case. Changing the Test Description: In 'newTest.kt', line 17, update the description of the test. Inserting Statements with Alternatives: Go to 'questionlist.kt' to insert your statements with the alternatives. You can add or remove Question constructors. Handling Correct Answers: The correct answer is taken from the resources folder. Check 'nlu.kt', line 10. Processing User Responses: User responses are processed in 'askQuestion.kt', for instance, line 60 processes onResponse and assigns 1 point to the appropriate score (depression, anxiety, or stress) based on the statement. Assessing Severity: In 'endTest'.kt, line 15, you need to change the function assessSeverity with your own assessment. Also, review lines 40-42 for the assessment of severity for each category.
 
