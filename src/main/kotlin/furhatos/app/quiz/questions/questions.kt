@@ -7,7 +7,7 @@ import java.util.*
 
 object QuestionSet {
 
-    var count : Int = -1 //ANI
+    var count : Int = -1 
     //var current: Question = questionsBG[Random().nextInt(questionsBG.lastIndex)]
     var current: Question = questionsEnglish[0]
 
@@ -38,7 +38,7 @@ class Question(val text: String, answer: List<String>, alternatives: List<List<S
     //init loads the first item of the list into primeoptions
     //And loads everything into options
     init {
-        //primeoptions.add(EnumItem(AnswerOption(true, answer.first()), answer.first())) //Ani otherwise repeat the first twice
+        
         answer.forEach {
             options.add(EnumItem(AnswerOption(true, it), it))
         }
