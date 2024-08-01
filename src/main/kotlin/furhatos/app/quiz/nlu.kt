@@ -11,8 +11,9 @@ class zero: Intent() //defined in resources folder
 class one: Intent()
 class two: Intent()
 class three: Intent()
+//Uncomment next if you use 5 point Likert scale
+// class four: Intent()
 
-class four: Intent()
 
 class DontKnow : Intent() {
     override fun getExamples(lang: Language): List<String> {
