@@ -30,7 +30,9 @@ val NewTest = state(parent = Parent) {
                + delay(100)
                 +"The next is Applied to me to a considerable degree, a good part of time, or digit  two."
                + delay(100)
-               + "The highest level is: Applied to me very much, most of the time, or digit  three. "
+               + "The next level is: Applied to me very much, most of the time, or digit  three. "
+            + delay(100)
+            + "The highest level is: apply to me Always, Strongly Agree, or digit  four. "
             + blocking {
                 furhat.gesture(Gestures.BigSmile, async = false)
                 }
