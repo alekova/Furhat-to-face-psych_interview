@@ -30,7 +30,7 @@ val AskQuestion: State = state(parent = Parent) {
         }
         gui.append("S${statement+1}: ${QuestionSet.current.text}")
 
-        // Ask the question and not followed by the options Ani
+        // Ask the question and not followed by the options 
         furhat.ask(QuestionSet.current.text )
 
     }
@@ -123,9 +123,9 @@ val AskQuestion: State = state(parent = Parent) {
         }
     }
 
-
+//Uncomment next if you use 5 point Likert scale
+    /* 
     onResponse<four> {
-
         println("answer four" )
         //put your code here if you use 5 Likert Scale
 
@@ -147,8 +147,7 @@ val AskQuestion: State = state(parent = Parent) {
             goto(NewQuestion)
         }
 
-
-    }
+    }*/
 
 
 
@@ -178,11 +177,7 @@ val AskQuestion: State = state(parent = Parent) {
 
     // If we don't get any response, we assume the user was too slow
     onNoResponse {
-        /*random(
-                { furhat.say("Too slow! Here comes the next question") },
-                { furhat.say("A bit too slow amigo! Get ready for the next question") }
-        )
-        goto(NewQuestion)*///Ani
+       
 
         furhat.say(QuestionSet.current.text)
         furhat.ask(QuestionSet.current.getOptionsString())
